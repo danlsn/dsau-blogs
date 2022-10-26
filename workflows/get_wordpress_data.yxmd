@@ -60,7 +60,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="126" y="342" width="133" height="50" />
+        <Position x="378" y="474" width="133" height="50" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -79,12 +79,12 @@
     </Node>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="126" y="29" width="133" height="50" />
+        <Position x="32" y="32" width="188" height="404" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Get Posts</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
           <Disabled value="False" />
           <Folded value="False" />
         </Configuration>
@@ -94,16 +94,69 @@
           <Left value="False" />
         </Annotation>
       </Properties>
-      <ChildNodes />
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="42" y="66" width="168" height="360" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>GET /wp-json/wp/v2/posts
+
+Response fields to keep:
+- .id
+- .date
+- .date_gmt
+- .guid
+    .rendered
+- .modified
+- .modified_gmt
+- .slug
+- .status
+- .type
+- .link
+- .title
+    .rendered
+- .content
+    .rendered
+- .excerpt
+    .rendered
+- .author
+- .featured_media
+- .categories[...]
+- .tags[...]
+- .yoast_head_json
+    .og_type
+    .twitter_misc
+    .'Est. reading time'
+- .yoast_head_json
+    .schema
+        .@graph[{@type=="Article"}]
+            .wordCount
+            .keywords[...]</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="1" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="126" y="186" width="136" height="50" />
+        <Position x="32" y="488" width="188" height="404" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Caption>Get Pages</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="10" />
           <Disabled value="False" />
           <Folded value="False" />
         </Configuration>
@@ -113,7 +166,61 @@
           <Left value="False" />
         </Annotation>
       </Properties>
-      <ChildNodes />
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="42" y="522" width="168" height="360" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>GET /wp-json/wp/v2/pages
+
+Response fields to keep:
+- .id
+- .date
+- .date_gmt
+- .guid
+    .rendered
+- .modified
+- .modified_gmt
+- .slug
+- .status
+- .type
+- .link
+- .title
+    .rendered
+- .content
+    .rendered
+- .excerpt
+    .rendered
+- .author
+- .featured_media
+- .parent
+- .menu_order
+- .categories[...]
+- .tags[...]
+- .yoast_head_json
+    .og_type
+    .twitter_misc
+    .'Est. reading time'
+- .yoast_head_json.schema
+    .@graph[{@type=="WebPage"}]
+        .wordCount
+        .keywords[...]</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="1" />
+              <Justification Justification="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -123,7 +230,7 @@
         <Configuration>
           <Caption>Get Taxonomies</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
+          <Disabled value="True" />
           <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -142,7 +249,7 @@
         <Configuration>
           <Caption>Get Types</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
+          <Disabled value="True" />
           <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
